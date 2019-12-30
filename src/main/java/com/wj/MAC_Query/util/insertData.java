@@ -1,25 +1,19 @@
-package com.wj.MAC_Query;
+package com.wj.MAC_Query.util;
 
 import com.wj.MAC_Query.entity.macAddr;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import com.wj.MAC_Query.DAO.macaddrRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
-@SpringBootTest
-@RunWith(SpringRunner.class)
-public class macaddrRepositoryTest {
-
+public class insertData {
     @Autowired
-    private com.wj.MAC_Query.DAO.macaddrRepository macaddrRepository;
+    private macaddrRepository mac_addrRepository;
 
-    @Test
-    public void addAddr(){
+
+    public static void main(String[] args) {
+
+
         String pathname = "mac_address_map.txt";
         String mac = "";
         String manu = "";
@@ -31,18 +25,27 @@ public class macaddrRepositoryTest {
 
             while ((line = br.readLine()) != null) {
                 // 一次读入一行数据
+//                Arrays.toString(line.split("\t"));
                 String[] str = line.split("\t");
                 mac = str[0];
                 manu = str[1];
+//                sql = "INSERT INTO MAC_ADDRESS(MAC_ADDDR, MANU) VALUES(" + mac + ", " + manu + ");";
+//                System.out.println(sql);
+                addcAddr(mac, manu);
 
-                macAddr addr = new macAddr();
-                addr.setMacaddr(mac);
-                addr.setManu(manu);
-                macaddrRepository.save(addr);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
+
+    public static void addcAddr(String mac, String manu) {
+        macAddr addr = new macAddr();
+        addr.setMacaddr(mac);
+        addr.setManu(manu);
+        System.out.println(addr);
+//        mac_addrRepository.save(addr);
+    }
+
 }
