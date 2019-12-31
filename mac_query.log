@@ -492,3 +492,7 @@ Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be
 2019-12-31 17:27:53.436  INFO 15166 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-12-31 17:27:53.441  INFO 15166 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
 2019-12-31 17:27:57.109  INFO 15166 --- [http-nio-8000-exec-2] com.wj.MAC_Query.MacQueryApplication     : MAC address: 20-9E-F7 is Not a valid MAC address
+2019-12-31 17:31:13.698  INFO 15166 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:31:13.700  INFO 15166 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-31 17:31:13.702  INFO 15166 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-31 17:31:13.705  INFO 15166 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
