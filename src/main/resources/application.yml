@@ -27,3 +27,10 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+server:
+  port: 8000
+
+logging:
+  file:
+    name: mac_query.log
+    path: ./
