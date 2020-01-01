@@ -18,7 +18,6 @@ public class macaddrController {
     @RequestMapping("/")
     public String query(Model model){
 
-        model.addAttribute("hello","你好!");
         return "index";
     }
 
@@ -26,7 +25,6 @@ public class macaddrController {
     public String query_mac(Model model,@RequestParam("macaddr") String mac){
         macAddr result = macaddrRepo.findByMacaddr(mac);
         System.out.println(result);
-        model.addAttribute("hello","你好!");
         model.addAttribute("manu",result.getManu());
         return "index";
     }
