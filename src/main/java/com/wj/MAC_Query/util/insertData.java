@@ -29,7 +29,6 @@ public class insertData {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
     /*
     向数据库逐条插入数据

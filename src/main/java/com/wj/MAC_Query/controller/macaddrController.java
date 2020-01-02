@@ -1,7 +1,11 @@
 package com.wj.MAC_Query.controller;
 
+import com.wj.MAC_Query.MacQueryApplication;
 import com.wj.MAC_Query.entity.macAddr;
 import com.wj.MAC_Query.DAO.macaddrRepository;
+import org.slf4j.ILoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class macaddrController {
+    final static String INVALID = "NOT A VALID MAC ADDRESS";
+    Logger logger = LoggerFactory.getLogger(MacQueryApplication.class);
+
     @Autowired
     macaddrRepository macaddrRepo;
 
@@ -56,15 +63,15 @@ public class macaddrController {
         String str = mac.toUpperCase();
         StringBuilder sb = new StringBuilder();
         char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            if ((chars[i] >= '0' && chars[i] <= '9') || (chars[i] >= 'A' && chars[i] <= 'F')) {
-                sb.append(chars[i]);
+        for (char aChar : chars) {
+            if ((aChar >= '0' && aChar <= '9') || (aChar >= 'A' && aChar <= 'F')) {
+                sb.append(aChar);
             }
         }
         if (sb.length() < 6) {
             return INVALID;
         }
 //        System.out.println(sb.substring(0, 6));
-        return sb.substring(0, 6).toString();
+        return sb.substring(0, 6);
     }
 }
