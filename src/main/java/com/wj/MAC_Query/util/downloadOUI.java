@@ -23,11 +23,7 @@ package com.wj.MAC_Query.util;
 
 
 import java.io.*;
-import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
 
 public class downloadOUI {
     String url = "http://standards.ieee.org/develop/regauth/oui/oui.txt";
@@ -36,7 +32,7 @@ public class downloadOUI {
         String url = "http://standards.ieee.org/develop/regauth/oui/oui.txt";
         try (BufferedInputStream inputStream = new BufferedInputStream(new URL(url).openStream());
              FileOutputStream fileOS = new FileOutputStream("./OUI_files/oui.txt")) {
-            byte data[] = new byte[10240];
+            byte[] data = new byte[10240];
             int byteContent;
             while ((byteContent = inputStream.read(data, 0, 10240)) != -1) {
                 fileOS.write(data, 0, byteContent);

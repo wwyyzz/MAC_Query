@@ -1,3 +1,17 @@
+server:
+  port: 8080
+
+logging:
+  file:
+    name: mac_query.log
+    path: ./
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 spring:
   datasource:
     #  驱动
@@ -27,17 +41,3 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-server:
-  port: 8000
-
-logging:
-  file:
-    name: mac_query.log
-    path: ./
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
