@@ -1,0 +1,3 @@
+1、实现RESTful API，对外提供服务
+2、使用Python实现每天自动下载oui.txt,在java上不太好实现
+3、实现根据oui.txt的增量数据增量更新数据库

@@ -34,3 +34,10 @@ logging:
   file:
     name: mac_query.log
     path: ./
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
