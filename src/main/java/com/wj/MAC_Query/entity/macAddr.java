@@ -6,7 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-
 public class macAddr {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Id
@@ -22,7 +21,7 @@ public class macAddr {
         this.id = id;
     }
 
-    public String getMacaddr() {
+    public String getMacaddr(String mac) {
         return macaddr;
     }
 

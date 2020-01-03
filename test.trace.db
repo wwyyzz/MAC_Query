@@ -360,3 +360,9 @@ INSERT INTO MAC_ADDR (MACADDR, MANU) VALUES('00D0EF','IGT') [42000-200]
 2019-12-30 20:28:13 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
 DELETE FROM TEST WHERE ID>0 [42102-200]
+2020-01-03 16:04:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLES[*] MAC_ADDR"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+drop tables MAC_ADDR [42001-200]
+2020-01-03 16:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MAC_ADDR" not found; SQL statement:
+select macaddr0_.id as id1_0_, macaddr0_.macaddr as macaddr2_0_, macaddr0_.manu as manu3_0_ from mac_addr macaddr0_ where macaddr0_.macaddr=? [42102-200]

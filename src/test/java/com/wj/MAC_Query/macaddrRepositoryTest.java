@@ -21,9 +21,6 @@ public class macaddrRepositoryTest {
     @Test
     public void addAddr(){
         String pathname = "mac_address_map.txt";
-        String mac = "";
-        String manu = "";
-        String sql = "";
         try (FileReader reader = new FileReader(pathname);
              BufferedReader br = new BufferedReader(reader) // 建立一个对象，它把文件内容转成计算机能读懂的语言
         ) {
@@ -32,12 +29,10 @@ public class macaddrRepositoryTest {
             while ((line = br.readLine()) != null) {
                 // 一次读入一行数据
                 String[] str = line.split("\t");
-                mac = str[0];
-                manu = str[1];
 
                 macAddr addr = new macAddr();
-                addr.setMacaddr(mac);
-                addr.setManu(manu);
+                addr.setMacaddr(str[0]);
+                addr.setManu(str[1]);
                 macaddrRepository.save(addr);
             }
         } catch (IOException e) {

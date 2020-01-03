@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -19,6 +20,7 @@ public class macaddrController {
 
     @Autowired
     macaddrRepository macaddrRepo;
+
 
     @RequestMapping("/")
     public String query() {
@@ -72,4 +74,13 @@ public class macaddrController {
 //        System.out.println(sb.substring(0, 6));
         return sb.substring(0, 6);
     }
+
+    @GetMapping ("/addOUI")
+    public String addOUI() {
+
+        new com.wj.MAC_Query.util.insertOUI().insert();
+
+        return "index";
+    }
+
 }
