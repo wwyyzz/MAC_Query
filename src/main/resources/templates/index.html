@@ -9,7 +9,7 @@
     <div align="center">
         <h1>MAC地址所属厂家查询 v0.1</h1>
         <h3>请输入MAC地址:</h3>
-        <form action="./query" method="post">
+        <form action="/query" method="post">
             <input type="text"  name="macaddr"/>
             <input type="submit" value="查询"/>
         </form>
@@ -25,10 +25,11 @@
             <tr>
                 <td th:text="${mac}">mac</td>
                 <td th:text="${oui}">oui</td>
-                <td th:text="${manu}" bgcolor="aqua">manu</td>
+                <td th:text="${manu}">manu</td>
             </tr>
         </table>
     </div>
+
 
 <!--    <a href="/addOUI">addOUI</a>-->
 
