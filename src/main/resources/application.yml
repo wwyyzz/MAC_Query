@@ -12,6 +12,7 @@ management:
       exposure:
         include: "*"
 
+
 spring:
   datasource:
     #  驱动
@@ -41,3 +42,8 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+#  security:
+#    user:
+#      password: mac!@#qwe
+

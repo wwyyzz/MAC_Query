@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
+
 public class macaddrController {
     final static String INVALID = "NOT A VALID MAC ADDRESS";
     private Logger logger = LoggerFactory.getLogger(MacQueryApplication.class);
