@@ -1,323 +1,37 @@
-2020-01-06 09:21:51.987  INFO 2209 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Starting MacQueryApplication on navy-pc with PID 2209 (/home/navy/IdeaProjects/MAC_Query/target/classes started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:21:51.992  INFO 2209 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : No active profile set, falling back to default profiles: default
-2020-01-06 09:21:52.112  INFO 2209 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-01-06 09:21:52.112  INFO 2209 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-01-06 09:21:52.113  INFO 2209 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-01-06 09:21:53.487  INFO 2209 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:21:53.559  INFO 2209 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 1 JPA repository interfaces.
-2020-01-06 09:21:53.862  INFO 2209 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:21:54.194  INFO 2209 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-01-06 09:21:54.202  INFO 2209 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-01-06 09:21:54.203  INFO 2209 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-01-06 09:21:54.263  INFO 2209 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-01-06 09:21:54.263  INFO 2209 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2150 ms
-2020-01-06 09:21:54.375  INFO 2209 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:21:54.677  INFO 2209 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:21:54.685  INFO 2209 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:21:54.926  INFO 2209 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:21:55.036  INFO 2209 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:21:55.229  INFO 2209 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:21:55.351  INFO 2209 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:21:56.351  INFO 2209 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:21:56.357  INFO 2209 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:21:56.383  INFO 2209 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-01-06 09:21:56.701  WARN 2209 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:21:56.811  INFO 2209 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:21:56.869  INFO 2209 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:21:57.096  INFO 2209 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:21:57.156  INFO 2209 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-01-06 09:21:57.158  INFO 2209 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Started MacQueryApplication in 5.697 seconds (JVM running for 6.628)
-2020-01-06 09:21:57.449  INFO 2209 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-01-06 09:21:57.449  INFO 2209 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-01-06 09:21:57.465  INFO 2209 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2020-01-06 09:22:33.017  INFO 2209 --- [http-nio-8080-exec-1] com.wj.MAC_Query.MacQueryApplication     : MAC address: 00000C is NOT A VALID MAC ADDRESS
-2020-01-06 09:22:58.197  INFO 2209 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:22:58.198  INFO 2209 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:22:58.202  INFO 2209 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:22:58.210  INFO 2209 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:23:27.202  INFO 2695 --- [main] com.wj.MAC_Query.macaddrRepositoryTest   : Starting macaddrRepositoryTest on navy-pc with PID 2695 (started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:23:27.204  INFO 2695 --- [main] com.wj.MAC_Query.macaddrRepositoryTest   : No active profile set, falling back to default profiles: default
-2020-01-06 09:23:28.138  INFO 2695 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:23:28.200  INFO 2695 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 1 JPA repository interfaces.
-2020-01-06 09:23:28.555  INFO 2695 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:23:28.745  INFO 2695 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:23:28.811  INFO 2695 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:23:28.988  INFO 2695 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:23:29.099  INFO 2695 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:23:29.341  INFO 2695 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:23:29.364  INFO 2695 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:23:29.998  INFO 2695 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:23:30.005  INFO 2695 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:23:30.548  WARN 2695 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:23:30.905  INFO 2695 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:23:30.997  INFO 2695 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:23:31.802  INFO 2695 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:23:31.857  INFO 2695 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:23:31.912  INFO 2695 --- [main] com.wj.MAC_Query.macaddrRepositoryTest   : Started macaddrRepositoryTest in 5.182 seconds (JVM running for 6.368)
-2020-01-06 09:23:32.115  INFO 2695 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:23:32.117  INFO 2695 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:23:32.119  INFO 2695 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:23:32.132  INFO 2695 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:27:19.920  INFO 3253 --- [main] com.wj.MAC_Query.macaddrRepositoryTest   : Starting macaddrRepositoryTest on navy-pc with PID 3253 (started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:27:19.929  INFO 3253 --- [main] com.wj.MAC_Query.macaddrRepositoryTest   : No active profile set, falling back to default profiles: default
-2020-01-06 09:27:21.031  INFO 3253 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:27:21.092  INFO 3253 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
-2020-01-06 09:27:21.466  INFO 3253 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:27:21.743  INFO 3253 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:27:21.827  INFO 3253 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:27:22.109  INFO 3253 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:27:22.230  INFO 3253 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:27:22.511  INFO 3253 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:27:22.537  INFO 3253 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:27:23.323  INFO 3253 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:27:23.331  INFO 3253 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:27:24.162  WARN 3253 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:27:24.560  INFO 3253 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:27:24.654  INFO 3253 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:27:25.299  INFO 3253 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:27:25.355  INFO 3253 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:27:25.407  INFO 3253 --- [main] com.wj.MAC_Query.macaddrRepositoryTest   : Started macaddrRepositoryTest in 5.994 seconds (JVM running for 6.979)
-2020-01-06 09:27:30.623  INFO 3253 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:27:30.628  INFO 3253 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:27:30.631  INFO 3253 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:27:30.852  INFO 3253 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:27:59.243  INFO 3381 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Starting MacQueryApplication on navy-pc with PID 3381 (/home/navy/IdeaProjects/MAC_Query/target/classes started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:27:59.248  INFO 3381 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : No active profile set, falling back to default profiles: default
-2020-01-06 09:27:59.331  INFO 3381 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-01-06 09:27:59.331  INFO 3381 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-01-06 09:27:59.331  INFO 3381 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-01-06 09:28:00.217  INFO 3381 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:28:00.263  INFO 3381 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 1 JPA repository interfaces.
-2020-01-06 09:28:00.477  INFO 3381 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:28:00.665  INFO 3381 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-01-06 09:28:00.671  INFO 3381 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-01-06 09:28:00.671  INFO 3381 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-01-06 09:28:00.715  INFO 3381 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-01-06 09:28:00.715  INFO 3381 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1384 ms
-2020-01-06 09:28:00.803  INFO 3381 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:28:00.982  INFO 3381 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:28:00.986  INFO 3381 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:28:01.160  INFO 3381 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:28:01.203  INFO 3381 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:28:01.281  INFO 3381 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:28:01.351  INFO 3381 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:28:01.815  INFO 3381 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:28:01.820  INFO 3381 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:28:01.844  INFO 3381 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-01-06 09:28:02.074  WARN 3381 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:28:02.173  INFO 3381 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:28:02.219  INFO 3381 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:28:02.409  INFO 3381 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:28:02.465  INFO 3381 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-01-06 09:28:02.467  INFO 3381 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Started MacQueryApplication in 3.659 seconds (JVM running for 4.247)
-2020-01-06 09:28:02.745  INFO 3381 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-01-06 09:28:02.745  INFO 3381 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-01-06 09:28:02.753  INFO 3381 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-01-06 09:28:17.735  INFO 3381 --- [http-nio-8080-exec-2] com.wj.MAC_Query.MacQueryApplication     : query MAC address... 00000c is Cisco Systems, Inc
-2020-01-06 09:28:33.436  INFO 3381 --- [http-nio-8080-exec-3] com.wj.MAC_Query.MacQueryApplication     : query MAC address... 98E743 is Dell Inc.
-2020-01-06 09:28:40.386  INFO 3381 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:28:40.389  INFO 3381 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:28:40.394  INFO 3381 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:28:40.461  INFO 3381 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:30:33.826  INFO 3873 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Starting MacQueryApplication on navy-pc with PID 3873 (/home/navy/IdeaProjects/MAC_Query/target/classes started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:30:33.829  INFO 3873 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : No active profile set, falling back to default profiles: default
-2020-01-06 09:30:33.867  INFO 3873 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-01-06 09:30:33.867  INFO 3873 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-01-06 09:30:33.867  INFO 3873 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-01-06 09:30:34.683  INFO 3873 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:30:34.725  INFO 3873 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 1 JPA repository interfaces.
-2020-01-06 09:30:34.948  INFO 3873 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:30:35.153  INFO 3873 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2020-01-06 09:30:35.161  INFO 3873 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-01-06 09:30:35.161  INFO 3873 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-01-06 09:30:35.208  INFO 3873 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-01-06 09:30:35.208  INFO 3873 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1341 ms
-2020-01-06 09:30:35.294  INFO 3873 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:30:35.483  INFO 3873 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:30:35.487  INFO 3873 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:30:35.657  INFO 3873 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:30:35.701  INFO 3873 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:30:35.775  INFO 3873 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:30:35.846  INFO 3873 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:30:36.279  INFO 3873 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:30:36.284  INFO 3873 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:30:36.309  INFO 3873 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-01-06 09:30:36.565  WARN 3873 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:30:36.682  INFO 3873 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:30:36.726  INFO 3873 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:30:36.910  INFO 3873 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:30:36.954  INFO 3873 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-01-06 09:30:36.958  WARN 3873 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [H2 TCP Server (tcp://127.0.1.1:42229)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.net.PlainSocketImpl.socketAccept(Native Method)
- java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
- java.net.ServerSocket.implAccept(ServerSocket.java:560)
- java.net.ServerSocket.accept(ServerSocket.java:528)
- org.h2.server.TcpServer.listen(TcpServer.java:263)
- org.h2.tools.Server.run(Server.java:610)
- java.lang.Thread.run(Thread.java:748)
-2020-01-06 09:30:36.958  WARN 3873 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [MVStore background writer nio:/home/navy/IdeaProjects/MAC_Query/test.mv.db] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.lang.Object.wait(Native Method)
- org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:3283)
-2020-01-06 09:30:36.959  WARN 3873 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
- java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
- java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
- java.lang.Thread.run(Thread.java:748)
-2020-01-06 09:30:36.959  WARN 3873 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
- java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
- java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
- java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
- java.lang.Thread.run(Thread.java:748)
-2020-01-06 09:30:36.963  INFO 3873 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-01-06 09:30:36.970 ERROR 3873 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:215) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at com.wj.MAC_Query.MacQueryApplication.main(MacQueryApplication.java:10) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_232]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_232]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_232]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_232]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:278) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
-	... 15 common frames omitted
-Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	... 17 common frames omitted
-Caused by: java.net.SocketException: Permission denied
-	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_232]
-	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_232]
-	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_232]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_232]
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_232]
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1142) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1228) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:586) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
-	... 19 common frames omitted
-
-2020-01-06 09:30:36.973  INFO 3873 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:30:36.973  INFO 3873 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:30:36.976  INFO 3873 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:30:37.051  INFO 3873 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:31:41.067  INFO 4019 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Starting MacQueryApplication on navy-pc with PID 4019 (/home/navy/IdeaProjects/MAC_Query/target/classes started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:31:41.069  INFO 4019 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : No active profile set, falling back to default profiles: default
-2020-01-06 09:31:41.121  INFO 4019 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-01-06 09:31:41.121  INFO 4019 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-01-06 09:31:41.121  INFO 4019 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-01-06 09:31:41.867  INFO 4019 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:31:41.908  INFO 4019 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 1 JPA repository interfaces.
-2020-01-06 09:31:42.124  INFO 4019 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:31:42.309  INFO 4019 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-01-06 09:31:42.314  INFO 4019 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-01-06 09:31:42.315  INFO 4019 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-01-06 09:31:42.359  INFO 4019 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-01-06 09:31:42.359  INFO 4019 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1238 ms
-2020-01-06 09:31:42.454  INFO 4019 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:31:42.695  INFO 4019 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:31:42.700  INFO 4019 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:31:42.905  INFO 4019 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:31:42.957  INFO 4019 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:31:43.039  INFO 4019 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:31:43.124  INFO 4019 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:31:43.630  INFO 4019 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:31:43.636  INFO 4019 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:31:43.663  INFO 4019 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-01-06 09:31:43.947  WARN 4019 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:31:44.041  INFO 4019 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:31:44.087  INFO 4019 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:31:44.271  INFO 4019 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:31:44.321  INFO 4019 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-01-06 09:31:44.323  INFO 4019 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Started MacQueryApplication in 3.655 seconds (JVM running for 4.126)
-2020-01-06 09:31:44.427  INFO 4019 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-01-06 09:31:44.427  INFO 4019 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-01-06 09:31:44.432  INFO 4019 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-01-06 09:32:07.315  INFO 4019 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:32:07.316  INFO 4019 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:32:07.319  INFO 4019 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:32:07.321  INFO 4019 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:32:31.414  INFO 4440 --- [main] com.wj.MAC_Query.util.insertOUITest      : Starting insertOUITest on navy-pc with PID 4440 (started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:32:31.424  INFO 4440 --- [main] com.wj.MAC_Query.util.insertOUITest      : No active profile set, falling back to default profiles: default
-2020-01-06 09:32:32.329  INFO 4440 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:32:32.387  INFO 4440 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 JPA repository interfaces.
-2020-01-06 09:32:32.761  INFO 4440 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:32:32.993  INFO 4440 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:32:33.058  INFO 4440 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:32:33.163  INFO 4440 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:32:33.261  INFO 4440 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:32:33.522  INFO 4440 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:32:33.548  INFO 4440 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:32:34.113  INFO 4440 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:32:34.120  INFO 4440 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:32:34.674  WARN 4440 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:32:35.126  INFO 4440 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:32:35.218  INFO 4440 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:32:35.690  INFO 4440 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:32:35.743  INFO 4440 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:32:35.794  INFO 4440 --- [main] com.wj.MAC_Query.util.insertOUITest      : Started insertOUITest in 4.892 seconds (JVM running for 5.967)
-2020-01-06 09:32:35.961  INFO 4440 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wj.MAC_Query.MacQueryApplicationTests], using SpringBootContextLoader
-2020-01-06 09:32:35.962  INFO 4440 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.wj.MAC_Query.MacQueryApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-01-06 09:32:35.964  INFO 4440 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wj.MAC_Query.MacQueryApplicationTests]: MacQueryApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-01-06 09:32:35.970  INFO 4440 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wj.MAC_Query.MacQueryApplication for test class com.wj.MAC_Query.MacQueryApplicationTests
-2020-01-06 09:32:35.973  INFO 4440 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-01-06 09:32:35.974  INFO 4440 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61d42275, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6614289a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4148ce43, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46fb9581, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6fcc0a1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@416b681c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@46d69ca4, org.springframework.test.context.event.EventPublishingTestExecutionListener@5c9b5e62, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c826498, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2633d09c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@54f25b42, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@521c67f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d156f8f]
-2020-01-06 09:32:36.051  INFO 4440 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:32:36.062  INFO 4440 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:32:36.064  INFO 4440 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:32:36.302  INFO 4440 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-01-06 09:34:56.995  INFO 4704 --- [main] com.wj.MAC_Query.util.insertOUITest      : Starting insertOUITest on navy-pc with PID 4704 (started by navy in /home/navy/IdeaProjects/MAC_Query)
-2020-01-06 09:34:57.000  INFO 4704 --- [main] com.wj.MAC_Query.util.insertOUITest      : No active profile set, falling back to default profiles: default
-2020-01-06 09:34:57.824  INFO 4704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-06 09:34:57.883  INFO 4704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 1 JPA repository interfaces.
-2020-01-06 09:34:58.328  INFO 4704 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-06 09:34:58.571  INFO 4704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-06 09:34:58.639  INFO 4704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-06 09:34:58.757  INFO 4704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-06 09:34:58.860  INFO 4704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-06 09:34:59.126  INFO 4704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-06 09:34:59.150  INFO 4704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-01-06 09:34:59.796  INFO 4704 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-06 09:34:59.804  INFO 4704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:35:00.351  WARN 4704 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-06 09:35:00.945  INFO 4704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:35:01.040  INFO 4704 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-06 09:35:01.553  INFO 4704 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
-2020-01-06 09:35:01.607  INFO 4704 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-01-06 09:35:01.664  INFO 4704 --- [main] com.wj.MAC_Query.util.insertOUITest      : Started insertOUITest in 4.975 seconds (JVM running for 5.811)
-2020-01-06 09:35:01.830  INFO 4704 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wj.MAC_Query.MacQueryApplicationTests], using SpringBootContextLoader
-2020-01-06 09:35:01.831  INFO 4704 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.wj.MAC_Query.MacQueryApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-01-06 09:35:01.831  INFO 4704 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wj.MAC_Query.MacQueryApplicationTests]: MacQueryApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-01-06 09:35:01.836  INFO 4704 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wj.MAC_Query.MacQueryApplication for test class com.wj.MAC_Query.MacQueryApplicationTests
-2020-01-06 09:35:01.837  INFO 4704 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-01-06 09:35:01.838  INFO 4704 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29bd056a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@21e702b8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7f1fec57, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5c9e3d01, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1dc9f5ad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4a2d66e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4dffff9, org.springframework.test.context.event.EventPublishingTestExecutionListener@2904bc56, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7bb25046, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69b1e8f8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@126af200, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e000a17, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77d959f1]
-2020-01-06 09:35:01.884  INFO 4704 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-01-06 09:35:01.890  INFO 4704 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-01-06 09:35:01.892  INFO 4704 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-01-06 09:35:02.058  INFO 4704 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-01-06 10:36:38.960  INFO 6626 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Starting MacQueryApplication on navy-pc with PID 6626 (/home/navy/IdeaProjects/MAC_Query/target/classes started by navy in /home/navy/IdeaProjects/MAC_Query)
+2020-01-06 10:36:38.963  INFO 6626 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : No active profile set, falling back to default profiles: default
+2020-01-06 10:36:39.068  INFO 6626 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/navy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-06 10:36:39.069  INFO 6626 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-06 10:36:39.069  INFO 6626 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-06 10:36:40.202  INFO 6626 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-06 10:36:40.262  INFO 6626 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+2020-01-06 10:36:40.592  INFO 6626 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-06 10:36:40.873  INFO 6626 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-06 10:36:40.881  INFO 6626 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-06 10:36:40.882  INFO 6626 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-06 10:36:40.945  INFO 6626 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-06 10:36:40.945  INFO 6626 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1876 ms
+2020-01-06 10:36:41.064  INFO 6626 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-06 10:36:41.279  INFO 6626 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-06 10:36:41.284  INFO 6626 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test'
+2020-01-06 10:36:41.517  INFO 6626 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-06 10:36:41.567  INFO 6626 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-06 10:36:41.669  INFO 6626 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-06 10:36:41.762  INFO 6626 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-06 10:36:42.286  INFO 6626 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-06 10:36:42.291  INFO 6626 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-06 10:36:42.319  INFO 6626 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-06 10:36:42.582  WARN 6626 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-06 10:36:42.691  INFO 6626 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-06 10:36:42.739  INFO 6626 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-06 10:36:42.928  INFO 6626 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-01-06 10:36:42.986  INFO 6626 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-06 10:36:42.988  INFO 6626 --- [restartedMain] com.wj.MAC_Query.MacQueryApplication     : Started MacQueryApplication in 4.535 seconds (JVM running for 5.218)
+2020-01-06 10:36:43.556  INFO 6626 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-06 10:36:43.556  INFO 6626 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-06 10:36:43.564  INFO 6626 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-01-06 10:37:44.284  INFO 6626 --- [http-nio-8080-exec-1] com.wj.MAC_Query.MacQueryApplication     : MAC address: 123456 is NOT A VALID MAC ADDRESS
+2020-01-06 10:42:57.140  INFO 6626 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-06 10:42:57.141  INFO 6626 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-06 10:42:57.145  INFO 6626 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-06 10:42:57.148  INFO 6626 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

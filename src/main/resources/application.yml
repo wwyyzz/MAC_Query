@@ -3,8 +3,8 @@ server:
 
 logging:
   file:
-    name: mac_query.log
-    path: ./
+#    name: mac_query.log
+    path: ./log/
 
 management:
   endpoints:
