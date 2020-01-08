@@ -13,7 +13,8 @@ management:
         include: "*"
 
 
-spring:
+
+
   datasource:
     #  驱动
     driver-class-name: org.h2.Driver
@@ -46,4 +47,9 @@ spring:
 #  security:
 #    user:
 #      password: mac!@#qwe
-
+spring:
+  security:
+    user:
+      name: admin
+      password: mac!@#qwe
+      roles: ENDPOINT_ADMIN
