@@ -31,7 +31,7 @@ public class macaddrController {
     @RequestMapping("/query")
     public String query_mac(Model model, @RequestParam("macaddr") String mac) {
         String oui = getOUI(mac);
-
+//        System.out.println(oui);
         //查询OUI数据库
         macAddr result = macaddrRepo.findByMacaddr(oui);
 

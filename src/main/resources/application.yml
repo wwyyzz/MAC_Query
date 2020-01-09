@@ -3,8 +3,8 @@ server:
 
 logging:
   file:
-    name: mac_query.log
-    path: ./
+#    name: mac_query.log
+    path: ./log
 
 management:
   endpoints:
@@ -14,13 +14,13 @@ management:
 
 
 
-
+spring:
   datasource:
     #  驱动
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:file:./test;AUTO_SERVER=TRUE
+    url: jdbc:h2:file:./db/mac_addr;AUTO_SERVER=TRUE
     username: sa
-    password:
+    password: mac!@#qwe
     # h2 内存数据库 内存模式连接配置 库名: mybatis
 #    url: jdbc:h2:mem:mybatis
     # 初始化数据表 DDL
@@ -44,12 +44,9 @@ management:
     hibernate:
       ddl-auto: update
 
-#  security:
-#    user:
-#      password: mac!@#qwe
-spring:
   security:
     user:
       name: admin
       password: mac!@#qwe
       roles: ENDPOINT_ADMIN
+

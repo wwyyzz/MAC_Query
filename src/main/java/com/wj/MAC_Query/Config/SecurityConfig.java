@@ -22,5 +22,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic()
         ;
 
+        http
+                .authorizeRequests()
+                .antMatchers("/h2-console/**").permitAll();
+        http
+                .headers()
+                .frameOptions()
+                .sameOrigin();
+
     }
 }

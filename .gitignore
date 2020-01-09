@@ -1,9 +1,9 @@
 HELP.md
-mac_query.log
-test.mv.db
-mac_query.log
 
 log/
+/db/
+/OUI_files/
+
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
