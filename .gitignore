@@ -1,6 +1,9 @@
 HELP.md
-mac_query.log
-test.mv.db
+
+log/
+/db/
+/OUI_files/
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
@@ -31,3 +34,5 @@ build/
 
 ### VS Code ###
 .vscode/
+/OUI_files/
+/.mvn/
