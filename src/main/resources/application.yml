@@ -1,0 +1,52 @@
+server:
+  port: 8080
+
+logging:
+  file:
+#    name: mac_query.log
+    path: ./log
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
+spring:
+  datasource:
+    #  驱动
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./db/mac_addr;AUTO_SERVER=TRUE
+    username: sa
+    password: mac!@#qwe
+    # h2 内存数据库 内存模式连接配置 库名: mybatis
+#    url: jdbc:h2:mem:mybatis
+    # 初始化数据表 DDL
+#    schema: classpath:sql/init.sql
+    #  初始化数据 DML
+#    data: classpath:sql/data.sql
+  h2:
+    #    开启console 访问 默认false
+    console:
+      enabled: true
+      settings:
+        #      开启h2 console 跟踪 方便调试  默认 false
+        trace: false
+        #      允许console 远程访问 默认false
+        web-allow-others: true
+      #  h2 访问路径上下文
+      path: /h2-console
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  security:
+    user:
+      name: admin
+      password: mac!@#qwe
+      roles: ENDPOINT_ADMIN
+
