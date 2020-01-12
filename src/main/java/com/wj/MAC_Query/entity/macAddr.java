@@ -1,10 +1,14 @@
 package com.wj.MAC_Query.entity;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Component
 @Entity
 public class macAddr {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
