@@ -12,7 +12,6 @@ public class MacQueryApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(MacQueryApplication.class, args);
-
     }
 
 }

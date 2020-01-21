@@ -25,7 +25,7 @@ public class updateOUI {
     private macaddrRepository macaddrRepo;
 
     @Transactional
-    @Scheduled(cron = "0 22 18 * * *")
+    @Scheduled(cron = "0 0 2 * * *")
     public void update() {
         String pathname = "./db/new_oui.txt";
 
@@ -43,10 +43,10 @@ public class updateOUI {
                 oui.setMacaddr(str[0]);
                 oui.setMacaddr(str[1]);
                 macaddrRepo.saveAndFlush(oui);
-                System.out.println(macaddrRepo.findByMacaddr(str[0]));
+//                System.out.println(macaddrRepo.findByMacaddr(str[0]));
 
-                logger.info("update oui");
-                System.out.println("update oui ....");
+                logger.info("update oui" + str[0]);
+//                System.out.println("update oui ....");
             }
         } catch (IOException e) {
             e.printStackTrace();
